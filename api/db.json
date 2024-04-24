@@ -1,16 +1,88 @@
 {
   "items": [
-    { "name": "Caneca de cerâmica rústica", "description": "dahksjdajdhdjka", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg", "category": "mugs" },
-    { "name": "Camiseta not today.", "description": "dsjfosjfoidsijfisdj", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg", "category": "t-shirts" },
-    { "name": "Caneca Black Ring", "description": "dsfdsfsdfsdfcvx", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg", "category": "mugs" },
-    { "name": "Camiseta Broken Saints", "description": "serwerefsdsdf", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg", "category": "t-shirts" },
-    { "name": "Camiseta Outcast", "description": "werwrwerfdsfsdfgsdvxcv", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg", "category": "t-shirts" },
-    { "name": "Caneca The Grounds", "description": "qwewerewrfsdfsdf", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg", "category": "mugs" },
-    { "name": "Camiseta evening", "description": "bvbcvbcvbcgfdgdfg", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-02.jpg", "category": "t-shirts" },
-    { "name": "Caneca preto fosco", "description": "gkhjkhjkujkyjkyyk", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-01.jpg", "category": "mugs" },
-    { "name": "Caneca Never settle", "description": "sfrwerwersdrsrs", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-03.jpg", "category": "mugs" },
-    { "name": "Camiseta DREAMER", "description": "ngvfghfgnhfghgnfnf", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg", "category": "t-shirts" },
-    { "name": "Caneca Decaf! P&Co", "description": "ryerterttsdfgdgdfgdf", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg", "category": "mugs" },
-    { "name": "Camiseta Ramones", "description": "loiçioçlioçioçlioçioç", "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg", "category": "t-shirts" }
+    {
+      "name": "Caneca de cerâmica rústica",
+      "description": "dahksjdajdhdjka",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+      "category": "mugs",
+      "price": "40,00"
+    },
+    {
+      "name": "Camiseta not today.",
+      "description": "dsjfosjfoidsijfisdj",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg",
+      "category": "t-shirts",
+      "price": "78,00"
+    },
+    {
+      "name": "Caneca Black Ring",
+      "description": "dsfdsfsdfsdfcvx",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg",
+      "category": "mugs",
+      "price": "32,00"
+    },
+    {
+      "name": "Camiseta Broken Saints",
+      "description": "serwerefsdsdf",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+      "category": "t-shirts",
+      "price": "58,00,"
+    },
+    {
+      "name": "Camiseta Outcast",
+      "description": "werwrwerfdsfsdfgsdvxcv",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+      "category": "t-shirts",
+      "price": "89,00"
+    },
+    {
+      "name": "Caneca The Grounds",
+      "description": "qwewerewrfsdfsdf",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg",
+      "category": "mugs",
+      "price": "85,00"
+    },
+    {
+      "name": "Camiseta evening",
+      "description": "bvbcvbcvbcgfdgdfg",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-02.jpg",
+      "category": "t-shirts",
+      "price": "69,00"
+    },
+    {
+      "name": "Caneca preto fosco",
+      "description": "gkhjkhjkujkyjkyyk",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-01.jpg",
+      "category": "mugs",
+      "price": "28,00"
+    },
+    {
+      "name": "Caneca Never settle",
+      "description": "sfrwerwersdrsrs",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-03.jpg",
+      "category": "mugs",
+      "price": "43,00"
+    },
+    {
+      "name": "Camiseta DREAMER",
+      "description": "ngvfghfgnhfghgnfnf",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg",
+      "category": "t-shirts",
+      "price": "55,00"
+    },
+    {
+      "name": "Caneca Decaf! P&Co",
+      "description": "ryerterttsdfgdgdfgdf",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg",
+      "category": "mugs",
+      "price": "32,00"
+    },
+    {
+      "name": "Camiseta Ramones",
+      "description": "loiçioçlioçioçlioçioç",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg",
+      "category": "t-shirts",
+      "price": "92,00"
+    }
   ]
 }
