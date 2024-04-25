@@ -1,18 +1,25 @@
+"use client"
+
 import Bag from "@/public/shopping-bag.svg"
 import Loupe from "@/public/search-loupe.svg"
 import Image from "next/image"
 import router from "next/router"
-
-// width: 352px;
-// height: 42px;
-// top: 19px;
-// left: 871px;
-// padding: 9px 16px 9px 16px;
-// gap: 0px;
-// border-radius: 8px 0px 0px 0px;
-// opacity: 0px;
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
 
 export function Header() {
+  const router = useRouter()
+
+  useEffect(() => {
+    const urlCompleta =
+      typeof window !== "undefined" ? window.location.href : ""
+    console.log(urlCompleta)
+    const regex = /_page=(\d+)/
+    const match = urlCompleta.match(regex)
+    {
+      !match ? (window.location.search = `/items?/_page=1/_limit=12`) : null
+    }
+  }, [])
   return (
     <header className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-3 grid-flow-row h-16 bg-white-50 justify-center items-center">
       <div>
