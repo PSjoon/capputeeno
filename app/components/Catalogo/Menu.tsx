@@ -64,7 +64,6 @@ export function Menu() {
     const shuffledItems = shuffleArray(items)
     setItems(shuffledItems)
   }
-
   const filteredItems =
     activeCategory === "allItems"
       ? items
