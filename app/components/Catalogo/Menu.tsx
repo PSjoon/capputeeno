@@ -42,9 +42,24 @@ export function Menu() {
     <>
       <nav className="grid grid-cols-2">
         <nav className="flex gap-6 ml-40 my-8">
-          <p onClick={() => setActiveCategory("allItems")}>TODOS OS PRODUTOS</p>
-          <p onClick={() => setActiveCategory("t-shirts")}>CAMISETAS</p>
-          <p onClick={() => setActiveCategory("mugs")}>CANECAS</p>
+          <p onClick={() => setActiveCategory("allItems")}>
+            TODOS OS PRODUTOS
+            {activeCategory === "allItems" ? (
+              <div className="w-full h-1 bg-orange-50 flex flex-col"></div>
+            ) : null}
+          </p>
+          <p onClick={() => setActiveCategory("t-shirts")}>
+            CAMISETAS
+            {activeCategory === "t-shirts" ? (
+              <div className="w-full h-1 bg-orange-50 flex flex-col"></div>
+            ) : null}
+          </p>
+          <p onClick={() => setActiveCategory("mugs")}>
+            CANECAS
+            {activeCategory === "mugs" ? (
+              <div className="w-full h-1 bg-orange-50 flex flex-col transition-all ease-in-out"></div>
+            ) : null}
+          </p>
         </nav>
         <Orders />
       </nav>
