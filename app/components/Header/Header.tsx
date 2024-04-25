@@ -18,6 +18,18 @@ export function Header() {
     setShowInput(!showInput)
   }
 
+  const submitClick = () => {
+    const currentURL = window.location.href
+    const urlParams = new URL(currentURL)
+    console.log(urlParams.pathname)
+
+    if (urlParams.pathname == "/pesquisa") {
+      window.location.search = `search=${searchBase}`
+    } else {
+      window.location.search = `/items?name_like=${searchBase}`
+    }
+  }
+
   useEffect(() => {
     const urlCompleta =
       typeof window !== "undefined" ? window.location.href : ""
@@ -58,7 +70,8 @@ export function Header() {
           <Image
             src={Loupe}
             alt=""
-            className="w-6 h-6 float-right rounded-lg bg-white-300"
+            onClick={submitClick}
+            className="w-6 h-6 float-right rounded-lg bg-white-300 cursor-pointer"
           />
         </div>
 
