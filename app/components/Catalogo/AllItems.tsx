@@ -6,7 +6,7 @@ interface Items {
   description: string
   image_url: string
   category: string
-  price: number
+  price: string
 }
 
 interface Props {
