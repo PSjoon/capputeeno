@@ -8,13 +8,12 @@ export function Order() {
   useEffect(() => {
     const urlCompleta =
       typeof window !== "undefined" ? window.location.href : ""
-    console.log(urlCompleta)
     const regex = /_page=(\d+)/
     const match = urlCompleta.match(regex)
 
     if (match) {
       const page = parseInt(match[1])
-      console.log(page)
+
       setPageParam(page)
     }
   }, [])

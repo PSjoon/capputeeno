@@ -22,13 +22,31 @@ export function Menu() {
   const [activeCategory, setActiveCategory] = useState<string>("allItems")
   const [isVisible, setVisible] = useState(false)
   const [sortByPrice, setSortByPrice] = useState<string>("")
+  const [message, setMessage] = useState("")
+
+  useEffect(() => {
+    const currentURL = window.location.href
+    const urlParams = new URL(currentURL)
+    const messageParam = urlParams.searchParams.get("/items?name_like")
+
+    const itemEncontrado = items.find((item) => item.name === messageParam)
+    if (itemEncontrado) {
+      setItems([itemEncontrado])
+    }
+  }, [items])
+
+  // const itemEncontrado = items.find((item) => item.name === messageParam)
+  // if (itemEncontrado) {
+  //   console.log(itemEncontrado)
+  //   setItems([itemEncontrado])
+  // }
 
   const fetchItems = async () => {
     try {
       const response = await api.get("/items")
       setItems(response.data)
     } catch (error) {
-      console.log(error)
+      null
     }
   }
 
@@ -71,11 +89,35 @@ export function Menu() {
 
   return (
     <>
-      <nav className="grid grid-cols-2">
-        <nav className="flex gap-6 ml-40 my-8">
-          <p onClick={() => setActiveCategory("allItems")}>TODOS OS PRODUTOS</p>
-          <p onClick={() => setActiveCategory("t-shirts")}>CAMISETAS</p>
-          <p onClick={() => setActiveCategory("mugs")}>CANECAS</p>
+      <nav className=" grid grid-cols-2">
+        <nav className="flex gap-6 ml-40 my-8 ">
+          <div
+            onClick={() => setActiveCategory("allItems")}
+            className="h-10 cursor-pointer"
+          >
+            TODOS OS PRODUTOS
+            {activeCategory === "allItems" ? (
+              <div className=" border border-orange-50"></div>
+            ) : null}
+          </div>
+          <div
+            onClick={() => setActiveCategory("t-shirts")}
+            className="h-10 cursor-pointer"
+          >
+            CAMISETAS
+            {activeCategory === "t-shirts" ? (
+              <div className=" border border-orange-50"></div>
+            ) : null}
+          </div>
+          <div
+            onClick={() => setActiveCategory("mugs")}
+            className="h-10 cursor-pointer"
+          >
+            CANECAS
+            {activeCategory === "mugs" ? (
+              <div className="border border-orange-50"></div>
+            ) : null}
+          </div>
         </nav>
         <nav className="flex flex-col ml-72 gap-6 my-8">
           <div

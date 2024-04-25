@@ -1,5 +1,3 @@
-#
-
     🚀 Front end challenge
 
 Bem-vindo(a). Este é o desafio Front end!
