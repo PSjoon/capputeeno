@@ -7,6 +7,7 @@ import Image from "next/image"
 import Arrow from "@/public/Arrow.svg"
 import { AllItems } from "./AllItems"
 import { Transition } from "@headlessui/react"
+import Link from "next/link"
 
 interface Item {
   id: number
@@ -157,6 +158,7 @@ export function Menu() {
           <Order />
         </nav>
       </nav>
+
       <AllItems items={filteredItems} />
     </>
   )

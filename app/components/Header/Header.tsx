@@ -30,16 +30,6 @@ export function Header() {
     }
   }
 
-  useEffect(() => {
-    const urlCompleta =
-      typeof window !== "undefined" ? window.location.href : ""
-    const regex = /\/items/
-    const match = urlCompleta.match(regex)
-
-    {
-      !match ? (window.location.search = `/items?/_page=1/_limit=12`) : null
-    }
-  }, [])
   return (
     <header className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-3 grid-flow-row h-16 bg-white-50 justify-center items-center">
       <Link
