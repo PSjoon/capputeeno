@@ -18,6 +18,15 @@ const config: Config = {
           300: "#f3f5f6",
           900: "#DCE2E5",
         },
+
+        gray: {
+          50: "#737380",
+          100: "#41414D",
+        },
+
+        orange: {
+          50: "#FFA585",
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
